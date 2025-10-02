@@ -9,7 +9,7 @@ require('./DB/connection')
 
 const brongoServer = express()  //assign server into custom server
   
-brongoServer.use(cors({ origin: process.env.CLIENT_URL, credentials: true }))  //use server with cors
+brongoServer.use(cors())  //use server with cors
 brongoServer.use(express.json())  //set the json before router 
 brongoServer.use(router)  //use server with cors
  
